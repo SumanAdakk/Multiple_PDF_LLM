@@ -10,6 +10,9 @@ from langchain.chains import ConversationalRetrievalChain
 from htmlTemplates import css, bot_template, user_template
 from langchain.llms import HuggingFaceHub
 
+import langchain
+langchain.verbose = False
+
 def get_pdf_text(pdf_docs):
     text = ""
     for pdf in pdf_docs:
